@@ -24,8 +24,7 @@ public class Main {
         userService.saveUser("Marina", "Pavlova", (byte)67);
 
         //Получение все User'ов из БД и вывод в консоль
-        List<User> users = userService.getAllUsers();
-        for (User user : users) {
+        for (User user : userService.getAllUsers()) {
             System.out.println(user);
         }
 
